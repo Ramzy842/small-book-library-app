@@ -159,16 +159,10 @@ document.querySelector('.cards').addEventListener('click', (e)=>{
 
 //Delete the book    
 document.querySelector('.cards').addEventListener('click', (e)=>{
-            
-            
             if(e.target.classList == 'delete'){
                     e.target.parentElement.parentElement.parentElement.remove();
                     delete myLibrary[e.target.parentElement.parentElement.parentElement.attributes[1].value];
-                    console.log(myLibrary);
-
                 }
-
-                
         });
 
 
